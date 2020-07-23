@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Control Panel</title>
+ <h1>Task II </h1>
+
+
+<br>
+</br>
+   #buttons style.
+ <style>
+    
+      .button {
+        display: inline-block;
+        background-color: #A9A9A9;
+        border-radius: 15px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+      }
+        .button1 {
+            background-color: #8B0000;
+        } /* Red */
+        #for{position:relative;
+        top:-30px;left:-110px}
+        #bac{position:relative;
+        bottom:-30px;left:-190px}
+
+    </style>
+</head>
+<body>
+    <form action='control.php' method='post'>
+        <button type='submit' name='left' class='button' id='lef'>left</button>
+        <button type='submit' name='stop' class='button1' id='sto'>stop</button>
+        <button type='submit' name='right' class='button' id='rig'>right</button>
+        <button type='submit' name='forwaod' class='button' id='for'>forword</button>
+        <button type='submit' name='backword' class='button' id='bac'>backword</button>
+    </form>
+
+     #ibm watson "wasabi assistet" code.
+
+    <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "9d826347-f470-4062-9759-dac4e92d118d", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "1d61ad3a-4be5-4dd0-aa2a-27a501fc17de", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
